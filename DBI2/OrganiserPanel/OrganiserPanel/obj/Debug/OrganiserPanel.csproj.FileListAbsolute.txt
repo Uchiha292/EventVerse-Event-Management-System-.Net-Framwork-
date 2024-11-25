@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\DBI2\OrganiserPanel\OrganiserPanel\bin\Debug\OrganiserPanel.exe.config
+C:\Users\user\Desktop\DBI2\OrganiserPanel\OrganiserPanel\bin\Debug\OrganiserPanel.exe
+C:\Users\user\Desktop\DBI2\OrganiserPanel\OrganiserPanel\bin\Debug\OrganiserPanel.pdb
+C:\Users\user\Desktop\DBI2\OrganiserPanel\OrganiserPanel\obj\Debug\OrganiserPanel.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\DBI2\OrganiserPanel\OrganiserPanel\obj\Debug\OrganiserPanel.Form1.resources
+C:\Users\user\Desktop\DBI2\OrganiserPanel\OrganiserPanel\obj\Debug\OrganiserPanel.Properties.Resources.resources
+C:\Users\user\Desktop\DBI2\OrganiserPanel\OrganiserPanel\obj\Debug\OrganiserPanel.csproj.GenerateResource.cache
+C:\Users\user\Desktop\DBI2\OrganiserPanel\OrganiserPanel\obj\Debug\OrganiserPanel.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\DBI2\OrganiserPanel\OrganiserPanel\obj\Debug\OrganiserPanel.exe
+C:\Users\user\Desktop\DBI2\OrganiserPanel\OrganiserPanel\obj\Debug\OrganiserPanel.pdb
+C:\Users\user\Desktop\DBI2\OrganiserPanel\OrganiserPanel\obj\Debug\OrganiserPanel.Form2.resources
