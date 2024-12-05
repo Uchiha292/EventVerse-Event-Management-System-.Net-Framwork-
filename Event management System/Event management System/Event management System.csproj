@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80206068-CB28-48E3-B1FA-66D7CBBA23A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Event_management_System</RootNamespace>
+    <AssemblyName>Event management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin1.Designer.cs">
+      <DependentUpon>Admin1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendeeMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendeeMainPage.Designer.cs">
+      <DependentUpon>AttendeeMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendee_EventPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendee_EventPayment.Designer.cs">
+      <DependentUpon>Attendee_EventPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Download_CheckInPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Download_CheckInPage.Designer.cs">
+      <DependentUpon>Download_CheckInPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackPage.Designer.cs">
+      <DependentUpon>FeedbackPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageInfoPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageInfoPage.Designer.cs">
+      <DependentUpon>ManageInfoPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizer1.Designer.cs">
+      <DependentUpon>Organizer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizer10.Designer.cs">
+      <DependentUpon>Organizer10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizer2.Designer.cs">
+      <DependentUpon>Organizer2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizer3.Designer.cs">
+      <DependentUpon>Organizer3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizer4.Designer.cs">
+      <DependentUpon>Organizer4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizer5.Designer.cs">
+      <DependentUpon>Organizer5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizer6.Designer.cs">
+      <DependentUpon>Organizer6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizer7.Designer.cs">
+      <DependentUpon>Organizer7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizer8.Designer.cs">
+      <DependentUpon>Organizer8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizer9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizer9.Designer.cs">
+      <DependentUpon>Organizer9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin2.Designer.cs">
+      <DependentUpon>Admin2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin3.Designer.cs">
+      <DependentUpon>Admin3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin4.Designer.cs">
+      <DependentUpon>Admin4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin5.Designer.cs">
+      <DependentUpon>Admin5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin6.Designer.cs">
+      <DependentUpon>Admin6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin7.Designer.cs">
+      <DependentUpon>Admin7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin8.Designer.cs">
+      <DependentUpon>Admin8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PastEventsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PastEventsPage.Designer.cs">
+      <DependentUpon>PastEventsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfilePage.Designer.cs">
+      <DependentUpon>ProfilePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPage.Designer.cs">
+      <DependentUpon>RegisterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchEventsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchEventsPage.Designer.cs">
+      <DependentUpon>SearchEventsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePrefPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePrefPage.Designer.cs">
+      <DependentUpon>UpdatePrefPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor1.Designer.cs">
+      <DependentUpon>Vendor1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor10.Designer.cs">
+      <DependentUpon>Vendor10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor2.Designer.cs">
+      <DependentUpon>Vendor2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor3.Designer.cs">
+      <DependentUpon>Vendor3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor4.Designer.cs">
+      <DependentUpon>Vendor4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor5.Designer.cs">
+      <DependentUpon>Vendor5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor6.Designer.cs">
+      <DependentUpon>Vendor6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor7.Designer.cs">
+      <DependentUpon>Vendor7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor8.Designer.cs">
+      <DependentUpon>Vendor8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor9.Designer.cs">
+      <DependentUpon>Vendor9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AttendeeMainPage.resx">
+      <DependentUpon>AttendeeMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendee_EventPayment.resx">
+      <DependentUpon>Attendee_EventPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Download_CheckInPage.resx">
+      <DependentUpon>Download_CheckInPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackPage.resx">
+      <DependentUpon>FeedbackPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageInfoPage.resx">
+      <DependentUpon>ManageInfoPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizer1.resx">
+      <DependentUpon>Organizer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizer10.resx">
+      <DependentUpon>Organizer10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizer2.resx">
+      <DependentUpon>Organizer2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizer3.resx">
+      <DependentUpon>Organizer3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizer4.resx">
+      <DependentUpon>Organizer4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizer5.resx">
+      <DependentUpon>Organizer5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizer6.resx">
+      <DependentUpon>Organizer6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizer7.resx">
+      <DependentUpon>Organizer7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizer8.resx">
+      <DependentUpon>Organizer8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizer9.resx">
+      <DependentUpon>Organizer9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin2.resx">
+      <DependentUpon>Admin2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin3.resx">
+      <DependentUpon>Admin3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin4.resx">
+      <DependentUpon>Admin4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin6.resx">
+      <DependentUpon>Admin6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin7.resx">
+      <DependentUpon>Admin7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin8.resx">
+      <DependentUpon>Admin8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PastEventsPage.resx">
+      <DependentUpon>PastEventsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfilePage.resx">
+      <DependentUpon>ProfilePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPage.resx">
+      <DependentUpon>RegisterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchEventsPage.resx">
+      <DependentUpon>SearchEventsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePrefPage.resx">
+      <DependentUpon>UpdatePrefPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor1.resx">
+      <DependentUpon>Vendor1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor10.resx">
+      <DependentUpon>Vendor10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor2.resx">
+      <DependentUpon>Vendor2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor3.resx">
+      <DependentUpon>Vendor3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor4.resx">
+      <DependentUpon>Vendor4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor5.resx">
+      <DependentUpon>Vendor5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor6.resx">
+      <DependentUpon>Vendor6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor7.resx">
+      <DependentUpon>Vendor7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor8.resx">
+      <DependentUpon>Vendor8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor9.resx">
+      <DependentUpon>Vendor9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
