@@ -75,7 +75,7 @@ namespace Event_management_System
                     return;
                 }
 
-                string updateQuery = "UPDATE Users SET ";
+                string updateQuery = "UPDATE [User] SET ";
 
                 // Only update fields that are not empty
                 if (!string.IsNullOrEmpty(name))

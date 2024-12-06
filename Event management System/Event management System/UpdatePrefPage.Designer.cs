@@ -49,6 +49,7 @@
             this.button1.TabIndex = 68;
             this.button1.Text = "Confirm Changes";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -56,6 +57,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(281, 26);
             this.textBox1.TabIndex = 66;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // ProfileButton
             // 

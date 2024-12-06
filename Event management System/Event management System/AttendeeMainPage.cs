@@ -15,40 +15,9 @@ namespace Event_management_System
         public AttendeeMainPage()
         {
             InitializeComponent();
-            tableLayoutPanel1.BackColor = Color.White;
-
-            tableLayoutPanel1.RowCount = 3;
-            tableLayoutPanel1.ColumnCount = 3;
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-            using (Pen borderPen = new Pen(Color.Black)) // You can change the color of the borders
-            {
-                // Calculate the width and height of each cell
-                int totalWidth = tableLayoutPanel1.ClientSize.Width;
-                int totalHeight = tableLayoutPanel1.ClientSize.Height;
 
-                int rowCount = tableLayoutPanel1.RowCount;
-                int colCount = tableLayoutPanel1.ColumnCount;
-
-                // Draw horizontal and vertical lines to show the cell boundaries
-                for (int row = 0; row < rowCount; row++)
-                {
-                    for (int col = 0; col < colCount; col++)
-                    {
-                        // Calculate the bounds of each cell
-                        int x = (totalWidth / colCount) * col;
-                        int y = (totalHeight / rowCount) * row;
-                        int cellWidth = totalWidth / colCount;
-                        int cellHeight = totalHeight / rowCount;
-
-                        // Draw a rectangle around the cell
-                        e.Graphics.DrawRectangle(borderPen, x, y, cellWidth, cellHeight);
-                    }
-                }
-            }
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -111,6 +80,13 @@ namespace Event_management_System
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
+
+        }
+
+        private void AttendeeMainPage_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dBPROJECTDataSet1.ATTENDEE_EVENT' table. You can move, or remove it, as needed.
+            this.aTTENDEE_EVENTTableAdapter.Fill(this.dBPROJECTDataSet1.ATTENDEE_EVENT);
 
         }
     }
